@@ -1,0 +1,23 @@
+{
+  "dependencies": {
+    "axios": "^0.24.0",
+    "express-sessions": "^1.0.6",
+    "jwt-redis": "^6.0.0"
+  },
+  "name": "mahsoly",
+  "description": "",
+  "version": "1.0.0",
+  "main": "appy.js",
+  "devDependencies": {
+    "concurrently": "^6.3.0",
+    "nodemon": "^2.0.14"
+  },
+  "scripts": {
+    "server": "nodemon ./bin/www",
+    "client": "npm start --prefix client",
+    "dev": "concurrently \"npm run server\" \"cd ../client && npm run client\""
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC"
+}
